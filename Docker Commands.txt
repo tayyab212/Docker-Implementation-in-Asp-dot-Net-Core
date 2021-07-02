@@ -1,0 +1,67 @@
+docker-compose up
+docker run -e MYSQL_ROOT_PASSWORD=Current-Root-Password -d -p 127.0.0.1:3307:3306 mysql
+mysql -uroot -pCurrent-Root-Password -h 127.0.0.1 -P3307
+
+docker-compose build
+docker-compose down
+docker-compose up
+
+Mosh Hamdani
+docker build -t buildName .
+docker run imagename
+
+
+docker ps 
+docker rm 
+
+docker iamges
+docker rmi  --remove docker images
+
+
+docker pull imagename --pull docker image
+docker run imagename -- run docker image
+
+docker run -p 8000:5000 name .
+
+docker inspect -- return docker information in json
+
+Pluralsit
+docker image build --tagnaem .
+docker container run --detach --pubish 80 name
+docker container ls
+docker inspect containerid
+
+docker-compose build
+docker-compose up -d
+docker cp C:\Users\ttahir\Downloads\ehrscrapper.sql ehrscrapper_frontend_db_1:/tmp/
+docker exec -it ehrscrapper_frontend_db_1 bash
+mysql -u root -pCurrent-Root-Password
+create database ehrscrapper;
+exit
+cd /tmp
+mysql -u root -pCurrent-Root-Password ehrscrapper < ehrscrapper.sql;
+
+
+mysql -u root -pCurrent-Root-Password
+Current-Root-Password
+
+-- Delete commands
+docker exec -it ehrscrapper_frontend_db_1 bash
+cd /tmp
+cd .
+mysql -u root -pCurrent-Root-Password
+drop database ehrscrapper;
+
+
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ehrscrapper_frontend_db_1
+
+
+docker login
+username
+password
+docker tag ehrscrapper_frontend_mvc:latest tthunjra212/ehrscrapper_86:myfirstimagepush
+docker push tthunjra212/ehrscrapper_86:myfirstimagepush
+
+
+docker pull ehrscrapper/ehrscrapper_86:mysqlehrscrapper
+docker pull ehrscrapper/ehrscrapper_86:mvcapplication
